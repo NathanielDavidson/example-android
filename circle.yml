@@ -4,7 +4,7 @@ dependencies:
 test:
   post:
     - ./gradlew clean build test
-    - cp ./*/build/outputes/apk/*.apk $CIRCLE_ARTIFACTS/
+    - cp ./*/build/outputs/apk/*.apk $CIRCLE_ARTIFACTS/
     - cp -R ./*/build/test-results/ $CIRCLE_TEST_REPORTS/
 notify:
   webhooks:
